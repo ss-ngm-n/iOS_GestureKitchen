@@ -43,6 +43,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.99854069950000002" green="0.41105949879999998" blue="0.0062974626200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="dVc-7Y-lMf" kind="relationship" relationship="viewControllers" id="ajX-qF-hft"/>
@@ -53,11 +54,11 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="130.98591549295776"/>
         </scene>
-        <!--Item-->
+        <!--홈-->
         <scene sceneID="RkO-HU-bJh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dVc-7Y-lMf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="twt-ia-xmt"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="twt-ia-xmt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ywf-dD-ZYX">
                         <autoresizingMask key="autoresizingMask"/>
@@ -107,7 +108,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hCt-A2-oQJ">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SEt-h9-qZ8">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="SEt-h9-qZ8">
                                                                         <rect key="frame" x="10.666666666666671" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="bUZ-kb-ilz"/>
@@ -125,7 +126,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V5l-g3-4a6">
                                                                 <rect key="frame" x="97.333333333333343" y="0.0" width="81.333333333333343" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mWk-c7-75y">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koreanfood" translatesAutoresizingMaskIntoConstraints="NO" id="mWk-c7-75y">
                                                                         <rect key="frame" x="10.666666666666671" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="798-sq-pT0"/>
@@ -143,7 +144,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-fp-S12">
                                                                 <rect key="frame" x="194.66666666666666" y="0.0" width="80.999999999999972" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YjP-19-v7z">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinesefood" translatesAutoresizingMaskIntoConstraints="NO" id="YjP-19-v7z">
                                                                         <rect key="frame" x="10.333333333333343" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="60" id="Qk8-qn-HfU"/>
@@ -161,7 +162,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n2V-km-XoO">
                                                                 <rect key="frame" x="291.66666666666669" y="0.0" width="81.333333333333314" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-hS-PK7">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="americanfood" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-hS-PK7">
                                                                         <rect key="frame" x="10.666666666666629" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="cAg-CF-uok"/>
@@ -184,7 +185,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iab-86-per">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-vy-D4c">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="japanesefood" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-vy-D4c">
                                                                         <rect key="frame" x="10.666666666666671" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="MTh-b7-ZOJ"/>
@@ -202,7 +203,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VLk-3N-bG8">
                                                                 <rect key="frame" x="97.333333333333343" y="0.0" width="81.333333333333343" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fHv-IS-ZzZ">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthyfood" translatesAutoresizingMaskIntoConstraints="NO" id="fHv-IS-ZzZ">
                                                                         <rect key="frame" x="10.666666666666671" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="60" id="crk-4m-ubP"/>
@@ -220,7 +221,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4NA-4i-9nu">
                                                                 <rect key="frame" x="194.66666666666666" y="0.0" width="80.999999999999972" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-wc-C9r">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nightfood" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-wc-C9r">
                                                                         <rect key="frame" x="10.333333333333343" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="60" id="5ni-rm-vOK"/>
@@ -238,7 +239,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n6F-mL-wjE">
                                                                 <rect key="frame" x="291.66666666666669" y="0.0" width="81.333333333333314" height="80.333333333333329"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tas-3q-dtm">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baking" translatesAutoresizingMaskIntoConstraints="NO" id="tas-3q-dtm">
                                                                         <rect key="frame" x="10.666666666666629" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="MPC-92-8KM"/>
@@ -1383,17 +1384,28 @@
             </objects>
             <point key="canvasLocation" x="2481.679389312977" y="874.64788732394368"/>
         </scene>
-        <!--Item-->
+        <!--제스처 가이드-->
         <scene sceneID="SBt-M9-9RM">
             <objects>
                 <viewController id="RHr-ZX-FxE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2gM-kB-m78">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GestureGuide" translatesAutoresizingMaskIntoConstraints="NO" id="d53-FF-MOs">
+                                <rect key="frame" x="0.0" y="118" width="393" height="617"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Dsc-EA-cZe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dsc-EA-cZe" firstAttribute="trailing" secondItem="d53-FF-MOs" secondAttribute="trailing" id="KBq-ks-eab"/>
+                            <constraint firstItem="Dsc-EA-cZe" firstAttribute="bottom" secondItem="d53-FF-MOs" secondAttribute="bottom" id="Odw-LY-UAX"/>
+                            <constraint firstItem="d53-FF-MOs" firstAttribute="top" secondItem="Dsc-EA-cZe" secondAttribute="top" id="Xt4-Yi-ftm"/>
+                            <constraint firstItem="d53-FF-MOs" firstAttribute="leading" secondItem="Dsc-EA-cZe" secondAttribute="leading" id="Z62-zW-InZ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zvG-kf-2cS"/>
+                    <tabBarItem key="tabBarItem" title="제스처 가이드" image="info.circle" catalog="system" id="zvG-kf-2cS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Lo-d4-LHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1404,6 +1416,17 @@
         <segue reference="oi0-ob-vnY"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="1" width="1600" height="1600"/>
+        <image name="GestureGuide" width="1600" height="3256"/>
+        <image name="americanfood" width="1600" height="1600"/>
+        <image name="baking" width="1600" height="1600"/>
+        <image name="chinesefood" width="1600" height="1600"/>
+        <image name="healthyfood" width="1600" height="1600"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
+        <image name="japanesefood" width="1600" height="1600"/>
+        <image name="koreanfood" width="1600" height="1600"/>
+        <image name="nightfood" width="1600" height="1600"/>
         <image name="person.2" catalog="system" width="128" height="87"/>
         <image name="timer" catalog="system" width="128" height="123"/>
         <systemColor name="linkColor">
