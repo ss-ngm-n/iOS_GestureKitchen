@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cooking View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_GestureKitchen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CookingViewController" customModule="iOS_GestureKitchen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,8 +249,8 @@
                                                             <constraint firstAttribute="width" constant="30" id="0bd-hu-PqM"/>
                                                         </constraints>
                                                     </view>
-                                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-Eg-4Xt">
-                                                        <rect key="frame" x="35.666666666666671" y="44.666666666666622" width="55" height="51.333333333333336"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-Eg-4Xt">
+                                                        <rect key="frame" x="35.666666666666671" y="44.666666666666629" width="55" height="51.333333333333329"/>
                                                         <color key="tintColor" systemColor="systemGray2Color"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
@@ -274,7 +274,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6DT-vH-2ve">
-                                                        <rect key="frame" x="242.33333333333331" y="44.666666666666622" width="55" height="51.333333333333336"/>
+                                                        <rect key="frame" x="242.33333333333331" y="44.666666666666629" width="55" height="51.333333333333329"/>
                                                         <color key="tintColor" systemColor="systemGray2Color"/>
                                                         <gestureRecognizers/>
                                                         <constraints>
@@ -329,16 +329,36 @@
                     </view>
                     <navigationItem key="navigationItem" id="cuN-Y5-shJ"/>
                     <connections>
-                        <outlet property="cameraView" destination="prh-Lz-R7w" id="v7z-Y2-p3J"/>
+                        <outlet property="cameraView" destination="prh-Lz-R7w" id="yrq-FA-gSN"/>
+                        <outlet property="descriptionLabel" destination="D7e-7T-RiS" id="LdI-IQ-LeO"/>
+                        <outlet property="nextArrowView" destination="6DT-vH-2ve" id="ZOP-WJ-elZ"/>
+                        <outlet property="prevArrowView" destination="gXf-Eg-4Xt" id="oys-Vq-hOU"/>
+                        <outlet property="stepLabel" destination="HQV-CB-usg" id="bCV-9e-gLV"/>
+                        <outlet property="timerLabel" destination="Kv8-Vz-laW" id="TPv-WH-dCL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="cO7-HO-Ix1"/>
-                <tapGestureRecognizer id="sx9-o2-JMP"/>
-                <tapGestureRecognizer id="Iv5-Zs-Fdb"/>
-                <tapGestureRecognizer id="R1D-yI-iel"/>
+                <tapGestureRecognizer id="cO7-HO-Ix1">
+                    <connections>
+                        <action selector="playPauseTapped:" destination="BYZ-38-t0r" id="mbf-UP-mLV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sx9-o2-JMP">
+                    <connections>
+                        <action selector="resetTapped:" destination="BYZ-38-t0r" id="EgN-yd-iST"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Iv5-Zs-Fdb">
+                    <connections>
+                        <action selector="prevArrowTapped:" destination="BYZ-38-t0r" id="V3m-VK-pj7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="R1D-yI-iel">
+                    <connections>
+                        <action selector="nextArrowTapped:" destination="BYZ-38-t0r" id="L6f-Ik-uir"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <tapGestureRecognizer id="riR-wt-JBr"/>
-                <tapGestureRecognizer id="7Ln-6c-YZm"/>
             </objects>
             <point key="canvasLocation" x="5407" y="-707"/>
         </scene>
@@ -2189,7 +2209,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방울토마토를 넣고 볶다가 살짝 으꺠어 즙을 냅니다. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz7-CI-cdm">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방울토마토를 넣고 볶다가 살짝 으깨어 즙을 냅니다. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vz7-CI-cdm">
                                                         <rect key="frame" x="36" y="0.0" width="1964" height="20.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -2241,8 +2261,6 @@
                                             </view>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="qdA-s3-Sig" secondAttribute="trailing" constant="20" id="RLb-ZJ-5q8"/>
-                                            <constraint firstItem="qdA-s3-Sig" firstAttribute="leading" secondItem="H8w-7E-qkv" secondAttribute="leading" constant="20" id="dMu-RN-oHO"/>
                                             <constraint firstItem="abS-VH-ZjA" firstAttribute="top" secondItem="H8w-7E-qkv" secondAttribute="top" id="xLi-NL-lTa"/>
                                         </constraints>
                                         <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="8" trailing="20"/>

@@ -112,8 +112,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                     // 시작 위치에서 얼마나 움직였는지 확인
                     let moveDistance = hypot(currentWristLocation.x - startLoc.x, currentWristLocation.y - startLoc.y)
                     
-                    if moveDistance < 0.05 { // 거의 안 움직였을 때 (0.05 반경 이내)
-                        if Date().timeIntervalSince(startTime) >= 2.0 {
+                    if moveDistance < 0.1 { // 거의 안 움직였을 때 (0.05 반경 이내)
+                        if Date().timeIntervalSince(startTime) >= 1.5 {
                             print("⏱️ 2초 정지 인식 완료! 타이머 시작/일시정지 토글!")
                             
                             // ⭐️ UI 변경이나 타이머 로직은 반드시 메인 스레드에서 실행
