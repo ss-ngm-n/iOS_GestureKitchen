@@ -94,6 +94,14 @@ class CookingViewController: UIViewController, AVCaptureVideoDataOutputSampleBuf
         resetStopwatch()
     }
     
+    @IBAction func finishTapped(_ sender: UITapGestureRecognizer) {
+        timer?.invalidate()
+        timer = nil
+        captureSession.stopRunning()
+        
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     func updateUI(){
         stepLabel.text = steps[currentIndex]
         descriptionLabel.text = descriptions[currentIndex]

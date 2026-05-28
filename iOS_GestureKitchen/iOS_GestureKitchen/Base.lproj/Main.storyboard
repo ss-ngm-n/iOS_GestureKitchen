@@ -358,7 +358,11 @@
                         <action selector="nextArrowTapped:" destination="BYZ-38-t0r" id="L6f-Ik-uir"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="riR-wt-JBr"/>
+                <tapGestureRecognizer id="riR-wt-JBr">
+                    <connections>
+                        <action selector="finishTapped:" destination="BYZ-38-t0r" id="bGY-iD-UPF"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5407" y="-707"/>
         </scene>
@@ -7028,7 +7032,7 @@
     <resources>
         <image name="1" width="1600" height="1600"/>
         <image name="Eggfriedrice" width="2000" height="1400"/>
-        <image name="GestureGuide" width="1600" height="3256"/>
+        <image name="GestureGuide" width="1600" height="3060"/>
         <image name="Kimchijjigae" width="2000" height="1400"/>
         <image name="Pasta" width="2000" height="1400"/>
         <image name="Salad" width="2000" height="1400"/>
@@ -7049,8 +7053,8 @@
         <image name="person.2" catalog="system" width="128" height="87"/>
         <image name="playpause.circle.fill" catalog="system" width="128" height="123"/>
         <image name="stop.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="timer" width="64" height="64"/>
         <image name="timer" catalog="system" width="128" height="123"/>
+        <image name="timer" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
